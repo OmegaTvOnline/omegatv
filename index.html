@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ômega TV - TV Digital de Qualidade</title>
-    
     <!-- Google tag (gtag.js) -->
-    <script async src="https://ww.googletagmanager.com/gtag/js?id=AW-16836166710"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16836166710"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'AW-16836166710');
     </script>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ômega TV - A Revolução do IPTV</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <!-- Font Awesome for Icons -->
@@ -49,6 +47,138 @@
         nav a:hover {
             color: #FFD700;
         }
+        .hero {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+        }
+        .hero video {
+            width: 100%;
+            max-height: 400px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #FFD700;
+        }
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .hero button {
+            background-color: #FFD700;
+            color: #0056D2;
+            font-size: 18px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .hero button:hover {
+            background-color: #FFC107;
+            transform: scale(1.1);
+        }
+        .features {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #FFFFFF;
+        }
+        .features h3 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #0056D2;
+        }
+        .features .feature {
+            display: inline-block;
+            width: 250px;
+            margin: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .features .feature:hover {
+            transform: translateY(-10px);
+        }
+        .features .feature i {
+            font-size: 40px;
+            color: #FFD700;
+            margin-bottom: 10px;
+        }
+        .features .feature h4 {
+            font-size: 20px;
+            margin-top: 10px;
+            color: #0056D2;
+        }
+        .features .feature p {
+            font-size: 16px;
+            color: #555555;
+        }
+        .plans {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #FFD700; /* Fundo dourado */
+        }
+        .plans h3 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: black; /* Título em preto */
+        }
+        .plans .plan {
+            display: inline-block;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #FFC107; /* Borda dourada mais clara */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            background-color: #FFFFFF; /* Fundo branco dos cards */
+            transition: transform 0.3s ease;
+        }
+        .plans .plan:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .plans .plan h4 {
+            font-size: 24px;
+            color: black; /* Títulos dos planos em preto */
+        }
+        .plans .plan .price {
+            color: black; /* Texto preto */
+            font-size: 24px;
+            font-weight: bold;
+            background: #FFF9D9; /* Fundo claro para destacar o preço */
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        .plans .plan p {
+            font-size: 16px;
+            color: black; /* Texto preto */
+        }
+        .plans .plan button {
+            background-color: black; /* Botão preto */
+            color: #FFD700; /* Texto dourado */
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .plans .plan button:hover {
+            background-color: #333333; /* Botão cinza escuro no hover */
+        }
+        footer {
+            background-color: #002244;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
@@ -60,66 +190,69 @@
         <img src="logo.png" alt="logo">
         <nav>
             <a href="#hero">Início</a>
-            <a href="#features">Benefícios</a>
+            <a href="#features">Por que escolher</a>
             <a href="#plans">Planos</a>
             <a href="#footer">Contato</a>
         </nav>
     </header>
 
     <section class="hero" id="hero">
-        <video autoplay loop muted controls muted>
+        <!-- Vídeo com áudio ativado e controles -->
+        <video autoplay loop  muted controls>
             <source src="video.mp4" type="video/mp4">
             Seu navegador não suporta vídeos HTML5.
         </video>
-        <h2>Experimente uma Nova Forma de Entretenimento!</h2>
-        <p>Assista a conteúdo digital de alta qualidade, com estabilidade e suporte premium.</p>
-        <a href="https://api.whatsapp.com/send?phone=5591993145391&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20servi%C3%A7o." target="_blank">
-            <button>Saiba Mais</button>
+        <h2>Descubra o Melhor do Entretenimento!</h2>
+        <p>Filmes, séries, esportes e muito mais, com qualidade HD e 4K.</p>
+        <a href="https://api.whatsapp.com/send?phone=5591993145391&text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20adquirir%20um%20teste%20gr%C3%A1tis." target="_blank">
+            <button>Testar Grátis Agora</button>
         </a>
     </section>
 
     <section class="features" id="features">
         <h3>Por que escolher Ômega TV?</h3>
         <div class="feature" data-aos="fade-up" data-aos-duration="1000">
-            <i class="fas fa-tv"></i>
-            <h4>Qualidade Superior</h4>
-            <p>Transmissão online estável e sem travamentos, proporcionando a melhor experiência.</p>
+            <i class="fas fa-film"></i>
+            <h4>Variedade de Conteúdo</h4>
+            <p>Mais de 10.000 canais, incluindo filmes e séries de sucesso.</p>
         </div>
         <div class="feature" data-aos="fade-up" data-aos-duration="1000">
-            <i class="fas fa-clock"></i>
-            <h4>Acesso Contínuo</h4>
-            <p>Plataforma acessível em qualquer momento do dia.</p>
+            <i class="fas fa-tv"></i>
+            <h4>Alta Qualidade</h4>
+            <p>Streaming em HD e 4K, sem travamentos.</p>
         </div>
         <div class="feature" data-aos="fade-up" data-aos-duration="1000">
             <i class="fas fa-headset"></i>
-            <h4>Suporte Exclusivo</h4>
-            <p>Atendimento rápido e eficiente para qualquer dúvida ou necessidade.</p>
+            <h4>Suporte Dedicado</h4>
+            <p>Atendimento 7 dias por semana, para ajudar com qualquer problema.</p>
         </div>
     </section>
 
     <section class="plans" id="plans">
-        <h3>Planos Acessíveis para Você</h3>
+        <h3>Planos que cabem no seu bolso</h3>
         <div class="plan" data-aos="fade-right" data-aos-duration="1000">
             <h4>Plano Mensal</h4>
-            <p>Acesso estável e de alta qualidade.</p>
+            <p>Ideal para quem busca flexibilidade e quer experimentar o melhor da IPTV sem compromisso.
+</p>
             <p class="price">R$29,99</p>
-            <a href="https://api.whatsapp.com/send?phone=5591993145391&text=Quero%20assinar%20o%20Plano%20Mensal" target="_blank">
+            <a href="https://api.whatsapp.com/send?phone=5591993145391&text=Ol%C3%A1%21%20Quero%20adquirir%20o%20plano%20mensal.%20" target="_blank">
                 <button>Assinar</button>
             </a>
         </div>
         <div class="plan" data-aos="fade-up" data-aos-duration="1000">
             <h4>Plano Semestral</h4>
-            <p>Maior economia e suporte premium.</p>
+            <p>A opção perfeita para quem quer economizar e ter acesso a um mundo de entretenimento por um preço ainda mais vantajoso</p>
             <p class="price">R$169,99</p>
-            <a href="https://api.whatsapp.com/send?phone=5591993145391&text=Quero%20assinar%20o%20Plano%20Semestral" target="_blank">
+            <a href="https://api.whatsapp.com/send?phone=5591993145391&text=Ol%C3%A1%21%20Quero%20adquirir%20o%20plano%20Semestral." target="_blank">
                 <button>Assinar</button>
             </a>
         </div>
         <div class="plan" data-aos="fade-left" data-aos-duration="1000">
             <h4>Plano Anual</h4>
-            <p>A melhor escolha para quem não abre mão da qualidade.</p>
+            <p>A melhor opção para quem é apaixonado por TV e não abre mão de ter acesso ilimitado aos melhores canais e conteúdos.
+</p>
             <p class="price">R$299,99</p>
-            <a href="https://api.whatsapp.com/send?phone=5591993145391&text=Quero%20assinar%20o%20Plano%20Anual" target="_blank">
+            <a href="https://api.whatsapp.com/send?phone=5591993145391&text=Ol%C3%A1%21%20Quero%20adquirir%20o%20plano%20anual." target="_blank">
                 <button>Assinar</button>
             </a>
         </div>
@@ -132,4 +265,3 @@
     </footer>
 </body>
 </html>
-
